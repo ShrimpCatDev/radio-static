@@ -12,7 +12,7 @@ function love.update(dt)
 end 
 
 function love.draw()
-    for x=0,7 do
+    for x=0,pal:getLen()-1 do
         lg.setColor(pal:color(x))
         lg.rectangle("fill",x*20,0,20,20)
     end
