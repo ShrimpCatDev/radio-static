@@ -1,7 +1,10 @@
 require("init")
+lg=love.graphics
 
 function love.load()
-
+    local i=love.image.newImageData("assets/clement-8-1x.png")
+    pal:new("clem8",i)
+    pal:load("clem8")
 end
 
 function love.update(dt)
@@ -9,5 +12,8 @@ function love.update(dt)
 end 
 
 function love.draw()
-
+    for x=0,7 do
+        lg.setColor(pal:color(x))
+        lg.rectangle("fill",x*20,0,20,20)
+    end
 end
