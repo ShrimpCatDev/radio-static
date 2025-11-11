@@ -1,10 +1,10 @@
 local conf = {}
 
-conf.gW = 160
-conf.gH = 128
+conf.gW = 16*16
+conf.gH = 9*16
 
-conf.wW = conf.gW*5
-conf.wH = conf.gH*5
+conf.wW = conf.gW*4
+conf.wH = conf.gH*4
 
 conf.textureFilter = "nearest"
 conf.fit = "aspect"
