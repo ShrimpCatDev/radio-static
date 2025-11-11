@@ -14,3 +14,4 @@ shove.setResolution(conf.gW,conf.gH,{fitMethod=conf.fit,scalingFilter=conf.textu
 shove.setWindowMode(conf.wW,conf.wH,{resizable=true,vsync=conf.vsync})
 
 pal=require("lib/pal")
+object=require("lib.classic")
