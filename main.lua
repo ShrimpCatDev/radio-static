@@ -7,6 +7,8 @@ function love.load()
     pal:load("clem8")
 
     shove.createLayer("game")
+
+    mouse={x,0,y=0,img=lg.newImage("assets/mouse.png")}
 end
 
 function love.update(dt)
@@ -20,6 +22,7 @@ function love.draw()
                 lg.setColor(pal:color(x))
                 lg.rectangle("fill",x*20,0,20,20)
             end
+            lg.draw(mouse.img,0,21)
         shove.endLayer()
     shove.endDraw()
 end
